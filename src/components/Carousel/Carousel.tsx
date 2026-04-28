@@ -1,7 +1,8 @@
 import type { Image } from '../../types/image';
 import { useCarousel } from '../../hooks/useCarousel';
-import { Button } from '../Button';
+import { Button } from '../../ui/Button';
 import { SelectedImages } from '../SelectedImages/SelectedImages';
+import { LeftArrowIcon, RightArrowIcon } from '../../ui/ArrowIcons';
 
 import styles from './Carousel.module.css';
 
@@ -53,8 +54,8 @@ export const Carousel = ({ images }: { images: Image[] }) => {
         </div>
 
         <div className={styles.navButtons}>
-          <Button direction='left' onClick={prev} />
-          <Button direction='right' onClick={next} />
+          <Button icon={<LeftArrowIcon />} onClick={prev} />
+          <Button icon={<RightArrowIcon />} onClick={next} />
         </div>
       </div>
 
