@@ -1,0 +1,23 @@
+.navButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.navButton:hover {
+  background-color: #f9f9f9;
+  border-color: #ccc;
+}
+
+.navButton svg {
+  display: block;
+}

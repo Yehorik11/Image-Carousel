@@ -1,0 +1,182 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px 0;
+  background-color: #f3f2ee;
+}
+
+.viewport {
+  overflow: hidden;
+  align-self: center;
+  width: 280px;
+}
+
+@media (min-width: 650px) {
+  .viewport {
+    width: 576px;
+  }
+}
+@media (min-width: 950px) {
+  .viewport {
+    width: 872px;
+  }
+}
+@media (min-width: 1250px) {
+  .viewport {
+    width: 1168px;
+  }
+}
+@media (min-width: 1550px) {
+  .viewport {
+    width: 1464px;
+  }
+}
+
+.track {
+  display: flex;
+  gap: 16px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.noTransition {
+  transition: none !important;
+}
+
+.slide {
+  flex: 0 0 280px;
+  width: 280px;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.selected::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1464px;
+  margin: 20px auto 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.counter {
+  font-size: 14px;
+  color: #333;
+}
+
+.total {
+  color: #999;
+}
+
+.navButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.selectionSection {
+  width: 100%;
+  max-width: 1464px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.selectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.selectionTitle {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.selectionBadge {
+  background: #333;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.dropzone {
+  width: 100%;
+  min-height: 120px;
+  border: 1px dashed #ccc;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.placeholder {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.selectedGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+}
+
+.selectedItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 120px;
+}
+
+.thumb {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.urlLink {
+  font-size: 10px;
+  color: #666;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.urlLink:hover {
+  text-decoration: underline;
+}

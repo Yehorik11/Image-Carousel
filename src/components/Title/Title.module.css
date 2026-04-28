@@ -1,0 +1,14 @@
+.title {
+  font-family: serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a1917;
+  margin: 0;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+}
