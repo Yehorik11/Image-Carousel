@@ -1,14 +1,35 @@
 .appLayout {
-  padding: 20px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f3f2ee;
 }
 
 .galleryHeader {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
+  max-width: 1464px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.content {
   width: 100%;
+  max-width: 1464px;
+  margin: 0 auto;
+}
+
+.loaderWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  gap: 12px;
+}
+
+.errorText {
+  font-family: 'Times New Roman', serif;
+  font-size: 14px;
+  color: #c0392b;
 }
