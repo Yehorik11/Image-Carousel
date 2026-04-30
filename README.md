@@ -25,7 +25,7 @@ Follow these steps to get the project up and running on your local machine:
 ### 1. Clone the repository
 
 ```bash
-git clone [https://github.com/Yehorik11/Image-Carousel.git](https://github.com/Yehorik11/Image-Carousel.git)
+git clone https://github.com/Yehorik11/Image-Carousel.git
 ```
 
 ### 2. Install dependencies
