@@ -13,11 +13,11 @@ A minimalist, high-performance image gallery built with React and TypeScript. Th
 
 ## 🛠 Tech Stack
 
-⚛️ React 18 — UI library
-📘 TypeScript — type safety & DX
-🎨 CSS Modules — scoped styling
-🪝 Custom Hooks — reusable logic
-🔄 TanStack Query — data fetching & caching
+- **⚛️ React** - UI Library
+- **📘 TypeScript** - Type Safety & Developer Experience
+- **🎨 CSS Modules** - Scoped and maintainable styling
+- **🪝 Custom Hooks** - Encapsulated carousel and API logic
+- **🔄 TanStack Query** - data fetching & caching
 
 ## 🚀 Getting Started
 
